@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import * as exec from '@action/exec'
+const exec = require('@actions/exec');
 import {wait} from './wait'
 
 async function run(): Promise<void> {
