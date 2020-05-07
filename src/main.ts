@@ -12,7 +12,7 @@ async function run(): Promise<void> {
     core.debug(new Date().toTimeString())
 
     core.setOutput('time', new Date().toTimeString())
-    await exec.exec('sh ../scripts/test.sh')
+    await exec.exec('bash ../scripts/test.sh')
   } catch (error) {
     core.setFailed(error.message)
   }
