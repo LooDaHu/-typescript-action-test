@@ -1,8 +1,8 @@
 import * as core from '@actions/core'
-const exec = require('@actions/exec');
 import {wait} from './wait'
 
 async function run(): Promise<void> {
+  const exec = require('@actions/exec');
   try {
     const ms: string = core.getInput('milliseconds')
     core.debug(`Waiting ${ms} milliseconds ...`)
